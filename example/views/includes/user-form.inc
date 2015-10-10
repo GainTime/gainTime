@@ -1,6 +1,6 @@
 <form action="" method="POST" enctype="multipart/form-data" class="s-form">
     <div class="msg-fixed warning" id="top-msg">Os campos com * são obrigatórios.</div>
-    <div class="prev-img" style="background-image: url(../assets/img/logo-gT.png");">
+    <div class="prev-img" style="background-image: url(../assets/img/logo-gT.png);">
         <div class="fake">
             <i class="icon-picture"></i>
         </div>
@@ -27,8 +27,8 @@
         <label for="email">E-mail*</label>
         <input type="email" name="user[email]" id="email" value="" required>
     </div>
-	<div class="btn-pair">
-		<a href="users.php" class="btn cancel">Voltar</a>
-		<input type="submit" class="false-send btn send" value="Salvar">
-	</div>
+    <div class="btn-pair">
+	<a href="users.php" class="btn cancel">Voltar</a>
+	<input type="submit" class="false-send btn send" value="Salvar">
+    </div>
 </form>
