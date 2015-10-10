@@ -12,20 +12,20 @@
         <div class="msg-fixed warning">A senha deve conter de 6 a 20 caracteres.</div>
         <div class="field has-label">
             <label for="new">Nova Senha*</label>
-            <input id="new" type="password" title="6 a 20 caracteres" class="form-control" pattern=".{6,20}">
+            <input id="new" type="password" title="6 a 20 caracteres" pattern=".{6,20}">
         </div>
         <div class="field has-label">
             <label for="confirm">Confirmar Senha*</label>
-            <input id="confirm" type="password" name="user[password]" title="6 a 20 caracteres" class="form-control" pattern=".{6,20}">
+            <input id="confirm" type="password" name="user[password]" title="6 a 20 caracteres" pattern=".{6,20}">
         </div>
     </div>
     <div class="field has-label">
         <label for="name">Nome*</label>
-        <input type="text" name="user[name]" id="name" class="form-control" value="" required>
+        <input type="text" name="user[name]" id="name" value="" required>
     </div>
     <div class="field has-label">
         <label for="email">E-mail*</label>
-        <input type="email" name="user[email]" id="email" class="form-control" value="" required>
+        <input type="email" name="user[email]" id="email" value="" required>
     </div>
 	<div class="btn-pair">
 		<a href="users.php" class="btn cancel">Voltar</a>
