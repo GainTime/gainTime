@@ -1,0 +1,49 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    @include onlyContent();
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: $body-c;
+    background-attachment: fixed;
+}
+
+ul {
+    @include onlyContent();
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.last {
+    margin-bottom: $footer-height+25!important;
+}
+
+.to-right {
+    float: right!important;
+}
+
+.to-left {
+    float: left!important;
+}
+
+.invisible {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .hxs {
+        display: none;
+    }
+}

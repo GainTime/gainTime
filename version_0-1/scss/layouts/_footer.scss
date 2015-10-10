@@ -1,0 +1,17 @@
+footer {
+    background: -webkit-linear-gradient(to top, $base-c, $base-c2, $base-c3) repeat scroll 0% 0%;
+    background: -o-linear-gradient(to top, $base-c, $base-c2, $base-c3) repeat scroll 0% 0%;
+    background: -moz-linear-gradient(to top, $base-c, $base-c2, $base-c3) repeat scroll 0% 0%;
+    background: linear-gradient(to top, $base-c, $base-c2, $base-c3) repeat scroll 0% 0%;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: $footer-height;
+}
+
+footer p {
+    margin: 0;
+}

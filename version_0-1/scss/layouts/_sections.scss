@@ -1,0 +1,51 @@
+.box {
+    padding: 15px 5%;
+    margin: 30px auto;
+    max-width: calc(100% - 100px);
+    background-color: $box-c;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+}
+
+section::after, .cf::after {
+    content:"";
+    clear:both;
+    display:block;
+}
+
+@media screen and (max-width: 767px) {
+    .box {
+        max-width:calc(100% - 10px);
+    }
+}
+
+.login {
+    padding-top: 70px;
+    .login-form {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
+        border-radius: 2px;
+        max-width: 520px!important;
+        padding: 20px;
+        background-color: $box-c;
+        text-align: center;
+        img {
+            height: 100px;
+        }
+    }
+    .forgot {
+        text-align: left;
+        a {
+            color: $base-c;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .login {
+        padding-top: 30px;
+    }
+}

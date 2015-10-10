@@ -1,0 +1,26 @@
+@mixin col($name, $resolution, $variable: min-width){
+    @media screen and ($variable: $resolution){
+        @for $i from 1 through 12 {
+            #{$name}-#{$i} {
+                @if(length($name)==2){
+                    height: $colSize*$i;
+                }
+                @else {
+                    margin-left: $colSize*$i;
+                }
+            };
+        }
+    }
+}
+
+@mixin onlyContent() {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}

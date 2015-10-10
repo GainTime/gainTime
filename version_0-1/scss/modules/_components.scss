@@ -1,0 +1,64 @@
+.top-bar {
+    width: 100%; 
+    h1 {
+        float: left;
+        margin-top: 10px;
+    }
+    h2 {
+        float: none;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .top-bar {
+        h1{
+            font-size: 27px;
+        }
+    }
+}
+
+/*---- PAINEL TABLE ---*/
+
+.table {
+    width: 100%;
+    color: #76838F;
+    tr > td, tr > th {
+        padding: 8px;
+        line-height: 1.57143;
+        vertical-align: top;
+        border-top: 1px solid rgba(23, 67, 104, 0.35);
+        text-align: left;
+        max-width: 200px;
+    }
+    tr > th {
+        color: #526069;
+    }
+    tr {
+        img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+}
+/*----------------------*/
+/*------ MESSAGE ------*/
+.msg, .msg-fixed {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+
+    &.success {
+        background-color: $success-c;
+    }
+
+    &.fail {
+        background-color: $fail-c;
+    }
+
+    &.warning {
+        background-color: $warning-c;
+        color: #1a1a1a;
+    }
+}
+/*----------------------*/

@@ -1,0 +1,174 @@
+.s-form {
+    max-width: 680px;
+    margin: auto;
+    .menot {
+        pointer-events: none;
+    }
+    textarea {
+        background: #FFF;
+        width: 100%;
+        resize: none;
+        padding: 15px;
+        border: 1px solid #E6E6E6;
+        border-top: none;
+        margin-top: -6px;
+    }
+    .field {
+        position: relative;
+        height: 72px;
+        padding: 16px 0 8px 0;
+        width: 100%;
+        margin: auto;
+        >input {
+            width: 100%;
+            font-size: 16px;
+            height: 32px;
+            padding: 5px 0px;
+            line-height: 16px;
+            font-size: 16px;
+            background: transparent none repeat scroll 0% 0%;
+            border: medium none;
+            outline: medium none;
+        }
+        >label {
+            text-align: left;
+            position: relative;
+            margin: 0;
+            display: block;
+            color: #6C6C6C;
+            line-height: 16px;
+            font-size: 16px;
+            font-weight: 400;
+            -webkit-transform: translateY(24px);
+            -ms-transform: translateY(24px);
+            transform: translateY(24px);
+            -webkit-transition: -webkit-transform 0.3s, color 0.3s;
+            transition: transform 0.3s, color 0.3s;
+            -webkit-transform-origin: 0 50%;
+            -ms-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+        }
+        >span {
+            font-size: 10px;
+        }
+        &::after,
+        &::before {
+          content: '';
+          height: 2px;
+          width: 100%;
+          position: absolute;
+          bottom: 6px;
+          left: 0;
+          background-color: #e6e6e6;
+        }
+
+        &::after {
+          background-color: #3498DB;
+          -webkit-transform: scaleX(0);
+          -ms-transform: scaleX(0);
+          transform: scaleX(0);
+          -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+        }
+    }
+    .has-label label {
+    /* Field is activated */
+      -webkit-transform: translateY(0) scale(0.75);
+      -ms-transform: translateY(0) scale(0.75);
+      transform: translateY(0) scale(0.75);
+    }
+    .is-focused label,
+    .has-label label {
+    /* Field is focused */
+      color: #144769;
+    }
+
+    .field.is-focused::after {
+      -webkit-transform: scaleX(1);
+      -ms-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+}
+
+.input-file {
+    margin: 10px 0;
+    &:after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+    .field{
+        width: calc(100% - 160px);
+        margin: 0px;
+        float: left;
+        height: 47px;
+        padding: 0px 5px;
+        pointer-events: none;
+    }
+}
+
+.btn-file {
+    float: left;
+    width: 150px!important;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background-color: $base-c;
+    &:hover {
+        background-color: $base-c2;
+    }
+    input[type="file"] {
+        cursor: pointer;
+        width: 150px!important;
+        height: 100%;
+        position: absolute;
+        opacity: 0;
+        z-index: 3;
+        left: 0;
+        top: 0;
+    }
+}
+
+.prev-img {
+    width: 150px;
+    height: 150px;
+    margin: 5px auto;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    position: relative;
+    background-color: $base-c3;
+
+    img {
+        width: 150px;
+        height: 150px;
+        border-radius: 8px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .fake {
+        width: 150px;
+        height: 150px;
+        background: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        z-index: 2;
+        text-align: center;
+        display: none;
+        font-size: 50px;
+        padding: 40px;
+    }
+
+    input {
+        width: 150px;
+        height: 150px;
+        border-radius: 8px;
+        opacity: 0;
+        position: absolute;
+        z-index: 5;
+        cursor: pointer;
+    }
+
+    &:hover > & .fake{
+        display: inherit;
+    }
+}

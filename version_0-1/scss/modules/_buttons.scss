@@ -1,0 +1,83 @@
+/*------ BUTTONS ------*/
+.btn {
+    font-size: 16px;
+    border: none;
+    color: #fff;
+    width: auto;
+    padding: 10px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    &.send {
+        background-color: $btn-send-color;
+    }
+
+    &.cancel {
+        background-color: $btn-cancel-color;
+    }
+
+    &.warning {
+        background-color: $btn-warning-color;
+    }
+    &:hover {
+        box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.18), 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.btn-radio {
+    color: #1a1a1a;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.btn-pair {
+    margin: 10px 0;
+}
+
+.btn-add, .btn-principal {
+    border: 3px solid $base-c;
+    background-color: $base-c;
+    &:hover {
+        background-color: $base-c2;
+        border: 3px solid $base-c2;
+    }
+}
+
+.btn-add {
+    float: right;
+}
+
+.btn-action {
+    font-size: 16px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding: 3px 0;
+    cursor: pointer;
+    color: #fff;
+    float: left;
+    margin: 5px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.btn-action.edit {
+    background-color: $btn-edit-color;
+    border: 1px solid $btn-edit-color;
+}
+
+.btn-action.del {
+    background-color: $btn-delete-color;
+    border: 1px solid $btn-delete-color;
+}
+
+.btn-action.download {
+    background-color: $btn-download-color;
+    border: 1px solid $btn-download-color;
+}
