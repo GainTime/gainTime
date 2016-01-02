@@ -27,8 +27,19 @@
         <label for="email">E-mail*</label>
         <input type="email" name="user[email]" id="email" value="" required>
     </div>
+    <div>
+        <div class="field-mark menot">
+            <label>Nível de Acesso *</label>
+        </div>
+        <label class="radio">
+           <input type="radio" name="user[isAdmin]" required value="1"> Administrador
+        </label>
+        <label class="radio">
+           <input type="radio" name="user[isAdmin]" value="0"> Usuário
+        </label>
+    </div>
     <div class="btn-pair">
-	<a href="users.php" class="btn cancel">Voltar</a>
-	<input type="submit" class="false-send btn send" value="Salvar">
+        <a href="users.php" class="btn cancel">Voltar</a>
+        <input type="submit" class="false-send btn send" value="Salvar">
     </div>
 </form>

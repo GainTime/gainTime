@@ -88,6 +88,82 @@
       -ms-transform: scaleX(1);
       transform: scaleX(1);
     }
+    .field-mark {
+        position: relative;
+        height: 72px;
+        padding: 16px 0 8px 0;
+        width: 100%;
+        margin: auto;
+        >label {
+            text-align: left;
+            position: relative;
+            margin: 0;
+            display: block;
+            color: #6C6C6C;
+            line-height: 16px;
+            font-size: 16px;
+            font-weight: 400;
+            -webkit-transform: translateY(24px);
+            -ms-transform: translateY(24px);
+            transform: translateY(24px);
+            -webkit-transition: -webkit-transform 0.3s, color 0.3s;
+            transition: transform 0.3s, color 0.3s;
+            -webkit-transform-origin: 0 50%;
+            -ms-transform-origin: 0 50%;
+            transform-origin: 0 50%;
+        }
+        >span {
+            font-size: 10px;
+        }
+        &::before {
+          content: '';
+          height: 2px;
+          width: 30%;
+          position: absolute;
+          bottom: 6px;
+          left: 0;
+          background-color: #e6e6e6;
+        }
+    }
+}
+
+.select-group {
+    label {
+        margin: 10px 0;
+        cursor: pointer;
+        display: inline-block;
+        color: #6C6C6C;
+    }
+    select {
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        overflow: hidden;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+        &:focus {
+            border-top: 1px solid #3498DB;
+        }
+    }
+}
+
+.radio, .checkbox {
+    width: 100%;
+    padding: 10px 0;
+    display: block;
+    cursor: pointer;
+    &-inline {
+        display: inline-block;
+        width: auto;
+        cursor: pointer;
+        padding: 10px 5px;
+    }
+}
+
+.form-box {
+    margin-bottom: 10px;
 }
 
 .input-file {

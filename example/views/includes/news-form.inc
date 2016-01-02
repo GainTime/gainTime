@@ -15,6 +15,13 @@
 		<label for="notice_author">Subtítulo *</label>
 		<input type="text" name="notice[subtitle]" value="" required>
 	</div>
+    <div class="select-group">
+        <label for="archive">Categoria</label>
+        <select name="" id="archive">
+            <option value="">Esportes</option>
+            <option value="">Música</option>
+        </select>
+    </div>
     <div>
         <div class="field menot">
             <label for="notice_description">Texto *</label>
