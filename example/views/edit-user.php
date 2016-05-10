@@ -12,7 +12,7 @@
             </div>
             <?php include('includes/user-form.inc'); ?>
         </section>
-		<?php include('includes/footer.inc'); ?>
+        <?php include('includes/footer.inc'); ?>
         <script type="text/javascript" src="../assets/js/inputLabels.min.js"></script>
     </body>
 </html>

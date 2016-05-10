@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-		<?php include('includes/head.inc'); ?>
+        <?php include('includes/head.inc'); ?>
         <title>Administração</title>
     </head>
     <body>
-        <?php include('includes/header.inc');	 ?>
+        <?php include('includes/header.inc');     ?>
         <main class="box">
             <div class="msg warning">Você não atualiza sua senha há 6 meses.</div>
             <div class="title">
@@ -47,6 +47,6 @@
                 </a>
             </section>
         </main>
-		<?php include('includes/footer.inc'); ?>
+        <?php include('includes/footer.inc'); ?>
     </body>
 </html>

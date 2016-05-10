@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<?php include('includes/head.inc'); ?>
-		<title>Notícias</title>
-	</head>
-	<body>
-        <?php include('includes/header.inc');	 ?>
-		<section class="box last">
+    <head>
+        <?php include('includes/head.inc'); ?>
+        <title>Notícias</title>
+    </head>
+    <body>
+        <?php include('includes/header.inc');     ?>
+        <section class="box last">
             <div class="top-bar">
                 <h1><i class="fa fa-newspaper-o"></i> Notícias</h1>
                 <a href="add-news.php" class="btn btn-add"><i class="fa fa-plus"></i>Adicionar</a>
@@ -32,7 +32,7 @@
                 </tr>
                 </tbody>
             </table>
-		</section>
-		<?php include('includes/footer.inc'); ?>
-	</body>
+        </section>
+        <?php include('includes/footer.inc'); ?>
+    </body>
 </html>
