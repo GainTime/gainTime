@@ -1,41 +1,73 @@
 /*------ MENU ------*/
 
 header {
-    padding: 5px 50px 5px calc(50px + 5%);
-    height: $header-height;
     background-color: $box-c;
     border: medium none;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
-    &::after {
-        content:"";
-        clear:both;
-        display:block;
+    height: $header-height;
+    padding: 0 5%;
+    .fa {
+        margin-right: 2px;
+        margin-top: 5px;
     }
-    img {
+    .menu-logo {
         float: left;
-        width: auto;
         height: 100%;
+        padding: 5px 0;
+    }
+    #me {
+        background-color: #1568AB;
+        border-radius: 3px;
+        cursor: pointer;
+        float: right;
+        height: 50px;
+        margin-left: 15px;
+        margin-top: 10px;
+        position: relative;
+        width: 50px;
+        img {
+            height: 100%;
+        }
+    }
+    #me-menu {
+        background-color: #FFF;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        width: 100px;
+        li {
+            color: #526069;
+            padding: 5px 10px;
+            &:hover {
+                background-color: $base-c2;
+                color: #fff;
+            }
+        }
     }
     .menu{
         &::after {
-            content:"";
             clear:both;
+            content:"";
             display:block;
         }
+
         li {
-            display: inline-block;
             color: #526069;
+            float: left;
         }
     }
-    .toggle, #menu-toggle {
+    .toggle,
+    #menu-toggle {
         display: none;
     }
 
     #menu-toggle {
-        padding: 5px;
-        font-size: 50px;
         color: $base-c2;
         cursor: pointer;
+        font-size: 50px;
+        padding: 5px;
     }
 }
 
@@ -44,100 +76,86 @@ header {
 
 @media (max-width: 520px) {
     header{
-        padding: 5px 20px;
+        padding: 0 20px;
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
     header {
         .menu {
+            background-color: $base-c2;
+            display: block;
+            left: 0;
             max-height: 0px;
             overflow: hidden;
-            position: absolute;
-            z-index: 99;
-            left: 0;
-            top: $header-height;
-            display: block;
-            width: 100%;
-            background-color: $base-c2;
             padding: 0px;
-            -webkit-transition: all 0.3s;
+            position: absolute;
+            top: $header-height;
+            transition: all 0.3s;
             -moz-transition: all 0.3s;
             -ms-transition: all 0.3s;
             -o-transition: all 0.3s;
-            transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            width: 100%;
+            z-index: 6;
             li {
-                margin: 0px;
+                color: #fff;
+                margin: 0;
                 padding: 10px 15px;
                 width: 100%;
-                color: #fff;
                 &:hover {
-                    color: $base-c2;
                     background-color: #fff;
+                    color: $base-c2;
                 }
             }
         }
 
         #menu-toggle {
-            display: block!important;
-            z-index: 6;
+            display: block;
             i {
                 float: right;
             }
         }
 
         #menu:checked ~ .menu {
-            max-height: 100%!important;
-            height: auto;
             border-bottom: 1px solid rgba(95, 95, 95, 0.3);
+            height: auto;
+            max-height: 100%;
             padding: 15px 0;
         }
     }
 }
 
-@media (min-width:768px) and (max-width:991px) {
-    .menu {
-        width: calc(100% - 160px);
+@media (min-width:993px) {
+    .menu,
+    .menu ul {
         float: right;
     }
 
-    .menu, ul, li {
+    .menu,
+    .menu ul,
+    .menu li {
         height: 100%;
     }
 
     .menu li {
-        width: 100% / $menu-list - 1;
+        padding: 22px 10px;
         text-align: center;
-        padding: 20px 5px;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
     }
 
-    .menu li:hover i {
-        color: $base-c2;
-    }
-}
-
-@media (min-width:992px) {
-    .menu {
-        width: 60%;
-        float: right;
+    .menu li:hover {
+        background-color: lighten($base-c2, 5%);
+        color: #FFF;
     }
 
-    .menu, ul, li {
-        height: 100%;
-    }
-
-    .menu li {
-        width: 100% / $menu-list - 1;
-        text-align: center;
-        padding: 20px 5px;
-    }
-
-    .menu li:hover, .menu li.active {
-        color: #000000;
-    }
-
-    .menu li:hover i, .menu li.active i {
-        color: $base-c2;
+    .menu li.active {
+        background-color: $base-c2;
+        color: #FFF;
     }
 
 }
