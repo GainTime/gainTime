@@ -1,5 +1,5 @@
 .top-bar {
-    width: 100%; 
+    width: 100%;
     h1 {
         float: left;
         margin-top: 10px;
@@ -21,44 +21,36 @@
 /*---- PAINEL TABLE ---*/
 
 .table {
-    width: 100%;
     color: #76838F;
+    width: 100%;
     tr > td, tr > th {
-        padding: 8px;
-        line-height: 1.57143;
-        vertical-align: top;
         border-top: 1px solid rgba(23, 67, 104, 0.35);
-        text-align: left;
+        line-height: 1.57143;
         max-width: 200px;
+        padding: 8px;
+        text-align: left;
+        vertical-align: top;
     }
     tr > th {
         color: #526069;
     }
     tr {
         img {
-            width: 35px;
             height: 35px;
+            width: 35px;
         }
     }
 }
 /*----------------------*/
 /*------ MESSAGE ------*/
 .msg, .msg-fixed {
-    width: 100%;
-    padding: 10px;
     color: #fff;
-
-    &.success {
-        background-color: $success-c;
-    }
-
-    &.fail {
-        background-color: $fail-c;
-    }
-
-    &.warning {
-        background-color: $warning-c;
-        color: #1a1a1a;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 5px;
+    ul {
+        list-style-type: initial;
+        margin-left: 5%;
     }
 }
 /*----------------------*/

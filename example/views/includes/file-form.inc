@@ -26,7 +26,7 @@
     <div class="input-file">
         <div class="btn btn-file">
             <i class="fa fa-upload"></i>
-            <input type="file" class="real" name="file" value=">
+            <input type="file" class="real" name="file" value="">
             <input type="hidden" name="MAX_FILE_SIZE" value="20971520"/>
         </div>
         <div class="field"><input class="false" type="text" value="" placeholder="Nenhum arquivo foi selecionado."></div> *

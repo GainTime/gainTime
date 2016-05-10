@@ -5,11 +5,11 @@
 }
 
 html, body {
-    height: 100%;
-    width: 100%;
     @include onlyContent();
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 16px;
+    height: 100%;
+    width: 100%;
 }
 
 body {
@@ -20,6 +20,12 @@ body {
 ul {
     @include onlyContent();
     list-style-type: none;
+}
+
+section::after, .cf::after {
+    clear:both;
+    content:"";
+    display:block;
 }
 
 a {

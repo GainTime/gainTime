@@ -27,7 +27,7 @@
                     <td class="hxs">25-12-2020, 19:30</td>
                     <td>
                         <a href="edit-news.php" class="btn-action edit" title="Editar Noticia"><i class="fa fa-edit fa-lg"></i></a>
-                        <a href="" class="btn-action del" title="Excluir Noticia"><i class="fa fa-trash-o fa-lg"></i></a>
+                        <a href="" class="btn-action del" title="Excluir Noticia" onclick="askDelete('Lançamento do GainTime', 'a notícia')"><i class="fa fa-trash-o fa-lg"></i></a>
                     </td>
                 </tr>
                 </tbody>

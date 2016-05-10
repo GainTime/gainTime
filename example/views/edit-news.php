@@ -13,7 +13,6 @@
             <?php include('includes/news-form.inc'); ?>
         </section>
 		<?php include('includes/footer.inc'); ?>
-        <script type="text/javascript" src="../vendors/jquery/jquery-2.1.4.min.js"></script>
         <script type="text/javascript" src="../assets/js/inputLabels.js"></script>
     </body>
 </html>
