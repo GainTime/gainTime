@@ -27,13 +27,18 @@ Painel administrativo. Simples e rápido.
 ### Estrutura
 
 ```
-GainTime/
-|-- dist/
-|   |-- css/
-|   |-- img/
-|   |-- js/
-|
-|-- vendors
+.
+├── dist
+│   ├── css
+│   │   └── gainTime.min.css
+│   ├── img
+│   │   ├── logo-gT-f.png
+│   │   └── logo-gT.png
+│   └── js
+│       └── gainTime.min.js
+├── vendors
+│   └── jquery-2.1.4.min.js
+└── README.md
 ```
 
 
