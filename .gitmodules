@@ -1,0 +1,3 @@
+[submodule "vendors/gainTime"]
+	path = vendors/gainTime
+	url = https://github.com/GainTime/gainTime

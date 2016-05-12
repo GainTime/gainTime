@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"></meta>
+        <link rel="icon" type="image/png" href="../vendors/gainTime/dist/img/logo-gT.png">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../vendors/gainTime/dist/css/gainTime.min.css">
+        <title>Contato</title>
+    </head>
+    <header>
+        <a href=""><img src="../vendors/gainTime/dist/img/logo-gT.png" alt="GainTime" class="menu-logo"></a>
+        <div id="me">
+            <img src="../vendors/gainTime/dist/img/logo-gT.png" alt="Me" class="professor-image">
+            <ul id="me-menu">
+                <a href="#"><li>Meu Perfil</li></a>
+                <a href="login.html"><li>Sair</li></a>
+            </ul>
+        </div>
+        <input type="checkbox" id="menu" class="toggle">
+        <label id="menu-toggle" for="menu" onclick><i class="fa fa-bars"></i></label>
+        <nav class="menu">
+            <ul>
+                <a href="index.html"><li><i class="fa fa-home"></i> Início</li></a>
+                <a href="news.html"><li><i class="fa fa-newspaper-o"></i> Notícias</li></a>
+                <a href="files.html"><li><i class="fa fa-file-pdf-o"></i> Arquivos</li></a>
+                <a href="users.html"><li><i class="fa fa-user"></i> Usuários</li></a>
+                <a href="contact.html"><li><i class="fa fa-user"></i> Contato</li></a>
+            </ul>
+        </nav>
+    </header>
+    <section class="box last">
+        <form id="aboutus" action="" class="s-form" method="POST" enctype="multipart/form-data">
+            <div class="top-bar cf">
+                <h1><i class="fa fa-envelope"></i> Contato</h1>
+                <button id="edit" onclick="editing('#aboutus', 'company')" type="button" class="btn wait to-right"><i class="icon-pencil"></i> Editar</button>
+            </div>
+            <div class="getme field has-label">
+                <label for="company">Nome da Empresa</label>
+                <input id="company" class="form-input" name="company" type="text" required value="GainTime®">
+            </div>
+            <div>
+                <div class="field menot">
+                    <label for="">Localização</label>
+                </div>
+                <textarea class="form-input" name="videoDescription" rows="3"></textarea>
+            </div>
+            <div class="getme field has-label">
+                <label for="">Telefone</label>
+                <input class="form-input" name="title" type="text" value="(xx) xxxx-xxxx">
+            </div>
+            <div>
+                <div class="field menot">
+                    <label for="">Rede social 1</label>
+                </div>
+                <textarea class="form-input" name="text" rows="3"></textarea>
+            </div>
+            <div id="btn-pair" class="btn-pair">
+                <button type="reset" class="btn cancel" onclick="block()">Cancelar</button>
+                <button class="btn send" type="submit" name="action" value="update">Concluir</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div>
+            <p>Área administrativa do<a href="https://github.com/GainTime/gainTime"> <b style="color: #000">GainTime <i class="fa fa-github" aria-hidden="true"></i></b></a></p>
+        </div>
+    </footer>
+    <script src="../vendors/gainTime/vendors/jquery-2.1.4.min.js"></script>
+    <script src="../vendors/gainTime/dist/js/gainTime.min.js"></script>
+    <script type="text/javascript">block();</script>
+</html>

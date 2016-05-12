@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"></meta>
+        <link rel="icon" type="image/png" href="../vendors/gainTime/dist/img/logo-gT.png">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../vendors/gainTime/dist/css/gainTime.min.css">
+        <title>Upload de Arquivos</title>
+    </head>
+    <body>
+        <header>
+            <a href=""><img src="../vendors/gainTime/dist/img/logo-gT.png" alt="GainTime" class="menu-logo"></a>
+            <div id="me">
+                <img src="../vendors/gainTime/dist/img/logo-gT.png" alt="Me" class="professor-image">
+                <ul id="me-menu">
+                    <a href="#"><li>Meu Perfil</li></a>
+                    <a href="login.html"><li>Sair</li></a>
+                </ul>
+            </div>
+            <input type="checkbox" id="menu" class="toggle">
+            <label id="menu-toggle" for="menu" onclick><i class="fa fa-bars"></i></label>
+            <nav class="menu">
+                <ul>
+                    <a href="index.html"><li><i class="fa fa-home"></i> Início</li></a>
+                    <a href="news.html"><li><i class="fa fa-newspaper-o"></i> Notícias</li></a>
+                    <a href="files.html"><li><i class="fa fa-file-pdf-o"></i> Arquivos</li></a>
+                    <a href="users.html"><li><i class="fa fa-user"></i> Usuários</li></a>
+                    <a href="contact.html"><li><i class="fa fa-user"></i> Contato</li></a>
+                </ul>
+            </nav>
+        </header>
+        <section class="box last">
+            <div class="top-bar">
+                <h2><i class="fa fa-newspaper-o"></i> Adicionar Arquivo</h2>
+            </div>
+            <form action="" method="POST" enctype="multipart/form-data" class="s-form">
+                <div class="msg-fixed warning">Os campos com * são obrigatórios.</div>
+                <div class="field has-label">
+                    <label for="file_title">Título Final do Arquivo *</label>
+                    <input type="text" name="file[title]" value="" required>
+                </div>
+                <div>
+                    <div class="field menot">
+                        <label for="file_description">Descrição</label>
+                    </div>
+                    <textarea name="file[description]" id="area1" cols="10" rows="5" ></textarea>
+                </div>
+                <div class="btn-pair">
+                    <div class="field menot">
+                        <label>Nível de Permissão *</label>
+                    </div>
+                    <label class="btn btn-radio">
+                       <input type="radio" name="professor[isAdmin]" required value="1" checked>
+                       Administrador
+                    </label>
+                    <label class="btn btn-radio">
+                       <input type="radio" name="professor[isAdmin]" value="0">
+                       Usuário
+                    </label>
+                </div>
+                <div class="input-file">
+                    <div class="btn btn-file">
+                        <i class="fa fa-upload"></i>
+                        <input type="file" class="real" name="file" value="">
+                        <input type="hidden" name="MAX_FILE_SIZE" value="20971520"/>
+                    </div>
+                    <div class="field"><input class="false" type="text" value="" placeholder="Nenhum arquivo foi selecionado."></div> *
+                </div>
+                <div class="msg-fixed warning">* Arquivo não deve possuir tamanho maior que 20 Megabytes.</div>
+                <div class="btn-pair">
+                    <a class="btn cancel" href="files.html">Cancelar</a>
+                    <button type="submit" class="btn send" value="Upload">Upload</button>
+                </div>
+            </form>
+        </section>
+        <footer>
+            <div>
+                <p>Área administrativa do<a href="https://github.com/GainTime/gainTime"> <b style="color: #000">GainTime <i class="fa fa-github" aria-hidden="true"></i></b></a></p>
+            </div>
+        </footer>
+        <script src="../vendors/gainTime/vendors/jquery-2.1.4.min.js"></script>
+        <script src="../vendors/gainTime/dist/js/gainTime.min.js"></script>
+    </body>
+</html>

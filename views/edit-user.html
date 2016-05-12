@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"></meta>
+        <link rel="icon" type="image/png" href="../vendors/gainTime/dist/img/logo-gT.png">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../vendors/gainTime/dist/css/gainTime.min.css">
+        <title>Editar usuário</title>
+    </head>
+    <body>
+        <header>
+            <a href=""><img src="../vendors/gainTime/dist/img/logo-gT.png" alt="GainTime" class="menu-logo"></a>
+            <div id="me">
+                <img src="../vendors/gainTime/dist/img/logo-gT.png" alt="Me" class="professor-image">
+                <ul id="me-menu">
+                    <a href="#"><li>Meu Perfil</li></a>
+                    <a href="login.html"><li>Sair</li></a>
+                </ul>
+            </div>
+            <input type="checkbox" id="menu" class="toggle">
+            <label id="menu-toggle" for="menu" onclick><i class="fa fa-bars"></i></label>
+            <nav class="menu">
+                <ul>
+                    <a href="index.html"><li><i class="fa fa-home"></i> Início</li></a>
+                    <a href="news.html"><li><i class="fa fa-newspaper-o"></i> Notícias</li></a>
+                    <a href="files.html"><li><i class="fa fa-file-pdf-o"></i> Arquivos</li></a>
+                    <a href="users.html"><li><i class="fa fa-user"></i> Usuários</li></a>
+                    <a href="contact.html"><li><i class="fa fa-user"></i> Contato</li></a>
+                </ul>
+            </nav>
+        </header>
+        <section class="box last">
+            <div class="top-bar">
+                <h2><i class="fa fa-newspaper-o"></i> Editar Usuário</h2>
+            </div>
+            <form action="" method="POST" enctype="multipart/form-data" class="s-form">
+                <div class="msg-fixed warning" id="top-msg">Os campos com * são obrigatórios.</div>
+                <div class="prev-img" style="background-image: url(../vendors/gainTime/dist/img/logo-gT.png);">
+                    <div class="fake">
+                        <i class="icon-picture"></i>
+                    </div>
+                    <img id="prev-img">
+                    <input type="file" name="picture" value="" id="changer">
+                </div>
+                <button id="form-control" type="button" class="btn wait" href="#">Alterar senha?</button>
+                <div class="form-controled invisible">
+                    <div class="msg-fixed warning">A senha deve conter de 6 a 20 caracteres.</div>
+                    <div class="field has-label">
+                        <label for="new">Nova Senha*</label>
+                        <input id="new" type="password" title="6 a 20 caracteres" pattern=".{6,20}">
+                    </div>
+                    <div class="field has-label">
+                        <label for="confirm">Confirmar Senha*</label>
+                        <input id="confirm" type="password" name="user[password]" title="6 a 20 caracteres" pattern=".{6,20}">
+                    </div>
+                </div>
+                <div class="field has-label">
+                    <label for="name">Nome*</label>
+                    <input type="text" name="user[name]" id="name" value="" required>
+                </div>
+                <div class="field has-label">
+                    <label for="email">E-mail*</label>
+                    <input type="email" name="user[email]" id="email" value="" required>
+                </div>
+                <div>
+                    <div class="field-mark menot">
+                        <label>Nível de Acesso *</label>
+                    </div>
+                    <label class="radio">
+                       <input type="radio" name="user[isAdmin]" required value="1"> Administrador
+                    </label>
+                    <label class="radio">
+                       <input type="radio" name="user[isAdmin]" value="0"> Usuário
+                    </label>
+                </div>
+                <div class="btn-pair">
+                    <a href="users.html" class="btn cancel">Voltar</a>
+                    <input type="submit" class="false-send btn send" value="Salvar">
+                </div>
+            </form>
+        </section>
+        <footer>
+            <div>
+                <p>Área administrativa do<a href="https://github.com/GainTime/gainTime"> <b style="color: #000">GainTime <i class="fa fa-github" aria-hidden="true"></i></b></a></p>
+            </div>
+        </footer>
+        <script src="../vendors/gainTime/vendors/jquery-2.1.4.min.js"></script>
+        <script src="../vendors/gainTime/dist/js/gainTime.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" name="viewport"></meta>
+        <link rel="icon" type="image/png" href="../vendors/gainTime/dist/img/logo-gT.png">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../vendors/gainTime/dist/css/gainTime.min.css">
+        <title>Notícias</title>
+    </head>
+    <body>
+        <header>
+            <a href=""><img src="../vendors/gainTime/dist/img/logo-gT.png" alt="GainTime" class="menu-logo"></a>
+            <div id="me">
+                <img src="../vendors/gainTime/dist/img/logo-gT.png" alt="Me" class="professor-image">
+                <ul id="me-menu">
+                    <a href="#"><li>Meu Perfil</li></a>
+                    <a href="login.html"><li>Sair</li></a>
+                </ul>
+            </div>
+            <input type="checkbox" id="menu" class="toggle">
+            <label id="menu-toggle" for="menu" onclick><i class="fa fa-bars"></i></label>
+            <nav class="menu">
+                <ul>
+                    <a href="index.html"><li><i class="fa fa-home"></i> Início</li></a>
+                    <a href="news.html"><li><i class="fa fa-newspaper-o"></i> Notícias</li></a>
+                    <a href="files.html"><li><i class="fa fa-file-pdf-o"></i> Arquivos</li></a>
+                    <a href="users.html"><li><i class="fa fa-user"></i> Usuários</li></a>
+                    <a href="contact.html"><li><i class="fa fa-user"></i> Contato</li></a>
+                </ul>
+            </nav>
+        </header>
+        <section class="box last">
+            <div class="top-bar">
+                <h1><i class="fa fa-newspaper-o"></i> Notícias</h1>
+                <a href="add-news.html" class="btn btn-add"><i class="fa fa-plus"></i>Adicionar</a>
+            </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Noticias</th>
+                        <th class="hxs">Autor</th>
+                        <th class="hxs">Data de criação</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Lançamento do<a href="https://github.com/GainTime/gainTime"> GainTime <i class="fa fa-github" aria-hidden="true"></i></a></td>
+                    <td class="hxs">JP Rodrigues</td>
+                    <td class="hxs">25-12-2020, 19:30</td>
+                    <td>
+                        <a href="edit-news.html" class="btn-action edit" title="Editar Noticia"><i class="fa fa-edit fa-lg"></i></a>
+                        <a href="" class="btn-action del" title="Excluir Noticia" onclick="askDelete('Lançamento do GainTime', 'a notícia')"><i class="fa fa-trash-o fa-lg"></i></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+        <footer>
+            <div>
+                <p>Área administrativa do<a href="https://github.com/GainTime/gainTime"> <b style="color: #000">GainTime <i class="fa fa-github" aria-hidden="true"></i></b></a></p>
+            </div>
+        </footer>
+        <script src="../vendors/gainTime/vendors/jquery-2.1.4.min.js"></script>
+        <script src="../vendors/gainTime/dist/js/gainTime.min.js"></script>
+    </body>
+</html>
