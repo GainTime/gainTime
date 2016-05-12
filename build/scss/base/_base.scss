@@ -44,12 +44,20 @@ a {
     float: left!important;
 }
 
-.invisible {
+.invisible, .sxs {
     display: none;
+}
+
+.visible {
+    display: inline;
 }
 
 @media (max-width: 767px) {
     .hxs {
         display: none;
+    }
+
+    .sxs {
+        display: inline;
     }
 }

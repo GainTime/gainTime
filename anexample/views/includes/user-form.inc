@@ -7,7 +7,7 @@
         <img id="prev-img">
         <input type="file" name="picture" value="" id="changer">
     </div>
-    <button id="form-control" type="button" class="btn warning" href="#">Alterar senha?</button>
+    <button id="form-control" type="button" class="btn wait" href="#">Alterar senha?</button>
     <div class="form-controled invisible">
         <div class="msg-fixed warning">A senha deve conter de 6 a 20 caracteres.</div>
         <div class="field has-label">

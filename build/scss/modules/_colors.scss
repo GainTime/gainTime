@@ -1,0 +1,38 @@
+.fail {
+    background-color: $fail-c;
+}
+
+.success {
+    background-color: $success-c;
+}
+
+.warning {
+    background-color: $warning-c;
+    color: #1a1a1a;
+}
+
+/*For actions-btn*/
+.edit {
+    background-color: $edit-c;
+}
+
+.del {
+    background-color: $delete-c;
+}
+
+.download {
+    background-color: $download-c;
+}
+
+/*for buttons*/
+.send {
+    background-color: $send-c;
+}
+
+.cancel {
+    background-color: $cancel-c;
+}
+
+.wait {
+    background-color: $wait-c;
+}
