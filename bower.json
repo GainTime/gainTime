@@ -17,6 +17,7 @@
   ],
   "license": "MIT",
   "ignore": [
+    "*.map",
     "**/.*",
     "node_modules",
     "bower_components",
