@@ -1,14 +1,10 @@
 {
   "name": "gaintime",
-  "homepage": "https://github.com/GainTime/gainTime",
+  "homepage": "https://gaintime.github.io",
   "authors": [
     "JP Rodrigues <70jprodrigues@gmail.com>"
   ],
   "description": "Framework HTML, CSS, e JS para desenvolvimento de projetos responsivos, com foco em painéis administrativos.",
-  "main": [
-    "dist/css/gainTime.min.css",
-    "dist/js/gainTime.min.js"
-  ],
   "keywords": [
     "css",
     "js",
@@ -17,7 +13,7 @@
     "front-end",
     "framework",
     "web",
-    "painel"
+    "panel"
   ],
   "license": "MIT",
   "ignore": [
@@ -27,8 +23,5 @@
     "test",
     "tests",
     "vendors"
-  ],
-  "dependencies": {
-    "jquery": "2.1.4"
-  }
+  ]
 }
