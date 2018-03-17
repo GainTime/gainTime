@@ -1,6 +1,6 @@
 {
   "name": "gaintime",
-  "version": "2.2.2",
+  "version": "3.0.0",
   "description": "GainTime é um framework de HTML, CSS e JS para desenvolvimento de projetos responsivos, focado na simplicidade.",
   "main": "css/gaintime.min.css",
   "repository": {
@@ -15,8 +15,7 @@
     "responsive",
     "front-end",
     "framework",
-    "web",
-    "panel"
+    "web"
   ],
   "license": "MIT",
   "bugs": {
