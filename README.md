@@ -36,7 +36,9 @@ Copie o código HTML abaixo para começar a trabalhar com um documento GainTime 
     <link rel="stylesheet" href="css/gaintime.min.css" media ="screen" title="no title">
   </head>
   <body>
-    <h1>Fique focado, e vai vencer no final.</h1>
+    <section>
+      <h1>Fique focado, e vai vencer no final.</h1>
+    </section>
     <script type="text/javascript" src="js/gaintime.min.js"></script>
   </body>
 </html>
