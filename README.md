@@ -36,8 +36,17 @@ Arquivos SASS (.sass) e JavaScript. Requer o compilador SASS.
 #### Instalação com Bower
 
 CSS e JavaScript compilados e minificados. Não inclui código fonte, nem documentação.
+
 ```
 $ bower install gaintime
+```
+
+#### Instalação com NPM
+
+CSS e JavaScript compilados e minificados. Não inclui código fonte, nem documentação.
+
+```
+$ npm install gaintime 
 ```
 #### Template Básico
 
