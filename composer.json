@@ -1,0 +1,26 @@
+{
+    "name": "gaintime/gaintime",
+    "type": "framework",
+    "description": "GainTime é um framework de HTML, CSS e JS para desenvolvimento de projetos responsivos, focado na simplicidade. ",
+    "keywords": [
+        "css",
+        "js",
+        "sass",
+        "responsive",
+        "front-end",
+        "framework",
+        "web"
+    ],
+    "homepage": "https://gaintime.github.io/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JP Rodrigues"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0.x-dev"
+        }
+    }
+}
